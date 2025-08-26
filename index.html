@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Online</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="aplicativo">
+    <h1>CALCULADORA</h1>
+    
+    <div id="visor">0</div>
+
+    <div id="teclas">
+      <div id="linha">
+        <button class="botao" onclick="clicar('7')">7</button>
+        <button class="botao" onclick="clicar('8')">8</button>
+        <button class="botao" onclick="clicar('9')">9</button>
+        <button class="botao operacao" onclick="clicar('/')">/</button>
+      </div>
+      <div id="linha">
+        <button class="botao" onclick="clicar('4')">4</button>
+        <button class="botao" onclick="clicar('5')">5</button>
+        <button class="botao" onclick="clicar('6')">6</button>
+        <button class="botao operacao" onclick="clicar('*')">*</button>
+      </div>
+      <div id="linha">
+        <button class="botao" onclick="clicar('1')">1</button>
+        <button class="botao" onclick="clicar('2')">2</button>
+        <button class="botao" onclick="clicar('3')">3</button>
+        <button class="botao operacao" onclick="clicar('-')">-</button>
+      </div>
+      <div id="linha">
+        <button class="botao" onclick="clicar('0')">0</button>
+        <button class="botao" onclick="clicar('.')">.</button>
+        <button class="botao limpar" onclick="limpar()">C</button>
+        <button class="botao operacao" onclick="clicar('+')">+</button>
+      </div>
+      <div id="linha">
+        <button class="botao resultado" onclick="calcular()">=</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html> 
